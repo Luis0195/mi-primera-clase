@@ -69,6 +69,13 @@ public class DesktopComputer {
         else {
             graphicData = "No";
         }
-        System.out.println("Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " );
+        System.out.println("Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " + graphicData);
     } 
+    
+    /**
+     * Estado del objeto
+     */
+    public String computerStatus() {
+        return "cpu " + processorName + " RAM " + ramMemoryCapacity + " have gpu " + haveGraphicCard;
+    }
 }
