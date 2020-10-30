@@ -57,4 +57,18 @@ public class DesktopComputer {
     public boolean getGraphicCard() {
         return haveGraphicCard;
     }
+    
+    /**
+     * Imprime los valores del pc
+     */
+    public void imprimirDetalles() {
+        String graphicData;
+        if (haveGraphicCard = true) {
+            graphicData = "Sí";
+        }
+        else {
+            graphicData = "No";
+        }
+        System.out.println("Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " );
+    } 
 }
