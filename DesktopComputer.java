@@ -62,20 +62,27 @@ public class DesktopComputer {
      * Imprime los valores del pc
      */
     public void imprimirDetalles() {
-        String graphicData;
-        if (haveGraphicCard = true) {
+       String graphicData;
+       if (haveGraphicCard == true) {
             graphicData = "Sí";
-        }
-        else {
+       }
+       else {
             graphicData = "No";
-        }
-        System.out.println("Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " + graphicData);
+       }
+       System.out.println("Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " + graphicData);
     } 
     
     /**
      * Estado del objeto
      */
     public String computerStatus() {
-        return "cpu " + processorName + " RAM " + ramMemoryCapacity + " have gpu " + haveGraphicCard;
+        String graphicData;
+        if (haveGraphicCard == true) {
+            graphicData = "Sí";
+        }
+        else {
+            graphicData = "No";
+        }
+        return "Modelo CPU: " + processorName + " | Cantidad de RAM: " + ramMemoryCapacity + "GB | Tiene gráfica?: " + graphicData;
     }
 }
