@@ -26,15 +26,20 @@ public class DesktopComputer {
     /**
      * Cambiar RAM
      */
-    public void changeRam(int newRamAmount) {
-        ramMemoryCapacity = newRamAmount;
+    public void addRam(int addRamAmount) {
+        ramMemoryCapacity += addRamAmount;
     }
     
     /**
      * Quitar o poner grafica
      */
-    public void quitOrPutGpu(boolean theresGpu) {
-        haveGraphicCard = theresGpu;
+    public void quitOrPutGpu() {
+        if (haveGraphicCard == true) {
+            haveGraphicCard = false;
+        }
+        else {
+            haveGraphicCard = true;
+        }
     }
     
     /**
